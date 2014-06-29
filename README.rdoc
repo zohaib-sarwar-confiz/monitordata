@@ -12,7 +12,7 @@ Its a simple rails server that record statistics send by https://github.com/zoha
 
 3. Create a database
 
-4. Open data config/database.yml and proovide your database configuration
+4. Open data config/database.yml and provide your database configuration
 
 5. At the command prompt, run migration
         rake db:migrate
