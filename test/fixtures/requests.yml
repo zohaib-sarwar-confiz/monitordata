@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: 
+  duration: 
+  extra: 
+  parameters: 
+  query: 
+  binds: 
+  connection_id: 
+  path: MyText
+
+two:
+  name: 
+  duration: 
+  extra: 
+  parameters: 
+  query: 
+  binds: 
+  connection_id: 
+  path: MyText

@@ -1,0 +1,32 @@
+== MonitorData
+
+Its a simple rails server that record statistics send by monitor_it gem used in some ruby application who requests performace needed to be monitor.
+
+== Getting Started
+
+1. At the command prompt, create a new Rails application:
+       <tt>git clone https://github.com/zohaib-sarwar-confiz/monitordata.git</tt> (where <tt>myapp</tt> is the application name)
+
+2. Change directory to <tt>monitordata</tt>
+        <tt>cd monitordata</tt>
+
+3. Create a database
+
+4. Open data config/database.yml and proovide your database configuration
+
+5. At the command prompt, run migration
+        <tt>rake db:migrate<tt>
+
+6.  start the web server:
+       <tt>rails server</tt> (run with --help for options)
+       <tt>rails server -p 3001</tt> (to run application on 3001 port remember this port will be need during monitor_it.rb initializer configurations)
+
+7. Go to http://localhost:3000/ and you'll see:
+       "Monitor Data Console"
+
+8. If you have configure monitor_it gem in yours application you will start seeing
+
+== Install and configure MonitorIt
+
+Goto https://github.com/zohaib-sarwar-confiz/monitor_it
+

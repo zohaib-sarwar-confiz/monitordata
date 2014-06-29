@@ -1,0 +1,35 @@
+<h1>Monitor Data Console</h1>
+
+<div>
+  <table class='requests' border="1">
+      <tr>
+        <th>Id</th>
+        <th>Event Type</th>
+        <th>Request Start</th>
+        <th>Request Finish</th>
+        <th>Duration</th>
+        <th>Path</th>
+        <!--<th>Query</th>-->
+        <th>Parameters</th>
+        <th>Detail</th>
+        <th>Connection Id</th>
+        <!--<th>Binds</th>-->
+      </tr>
+      <%@request.each do |req|%>
+        <tr>
+          <td class='requests'><%= req.id%></td>
+          <td class='requests'><%= req.name%></td>
+          <td class='requests'><%= req.start%></td>
+          <td class='requests'><%= req.finish%></td>
+          <td class='requests'><%= req.duration%></td>
+          <td class='requests'><%= req.path%></td>
+          <!--<td class='requests'><%#= req.query%></td>-->
+          <td class='requests'><%= req.parameters%></td>
+          <td class='requests'><%= req.extra%></td>
+          <td class='requests'><%= req.connection_id%></td>
+          <!--<td class='requests'><%#= req.binds%></td>-->
+        </tr>
+      <%end%>
+      <%= will_paginate @request , :class=> "digg_pagination"%>
+  </table>
+</div>
