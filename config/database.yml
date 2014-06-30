@@ -26,14 +26,14 @@
 
 development:
 #  host: localhost
-  adapter:
-  database:
-  username:
-  password:
+  adapter: postgresql
+  database: montiordata
+  username: confiz
+  password: confiz
 
 production:
 #  host: localhost
-  adapter:
-  database:
-  username:
-  password:
+  adapter: postgresql
+  database: montiordata
+  username: confiz
+  password: confiz
